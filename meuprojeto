@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessibilidade na Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .controls {
+            margin-bottom: 20px;
+        }
+        button {
+            font-size: 16px;
+            padding: 10px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <button onclick="changeFontSize(1)">A+</button>
+        <button onclick="changeFontSize(-1)">A-</button>
+    </div>
+    
+    <h1>Acessibilidade na Web</h1>
+    <p>
+        A acessibilidade na web garante que todas as pessoas, incluindo aquelas com deficiências,
+        possam acessar e interagir com os sites de forma eficaz. Isso inclui o uso de leitores de tela,
+        contraste adequado, legendas em vídeos e outras práticas que melhoram a experiência do usuário.
+    </p>
+    
+    <img src="imagem-exemplo.jpg" alt="Pessoa utilizando um leitor de tela em um computador." width="100%">
+    
+    <script>
+        function changeFontSize(change) {
+            let body = document.body;
+            let currentSize = parseFloat(window.getComputedStyle(body, null).getPropertyValue('font-size'));
+            body.style.fontSize = (currentSize + change) + 'px';
+        }
+    </script>
+</body>
+</html>
