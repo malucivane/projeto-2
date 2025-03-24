@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclismo e Seus Benefícios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .controls {
+            margin-bottom: 20px;
+        }
+        button {
+            font-size: 16px;
+            padding: 10px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <button onclick="changeFontSize(1)">A+</button>
+        <button onclick="changeFontSize(-1)">A-</button>
+    </div>
+    
+    <h1>Ciclismo e Seus Benefícios</h1>
+    <p>
+        O ciclismo é uma excelente atividade física que promove a saúde cardiovascular, fortalece os músculos e melhora a resistência.
+        Além disso, é uma alternativa sustentável de transporte, ajudando na redução da poluição e no alívio do trânsito nas cidades.
+    </p>
+    
+    <img src="malu.jpg"  alt="Ciclistas pedalando em uma trilha cercada pela natureza." width="50%">
+     
+    <script>
+        function changeFontSize(change) {
+            let body = document.body;
+            let currentSize = parseFloat(window.getComputedStyle(body, null).getPropertyValue('font-size'));
+            body.style.fontSize = (currentSize + change) + 'px';
+        }
+    </script>
+</body>    <p>
+    Ao pedalar, sinto-me livre e conectado à natureza. O vento no rosto, o sol nas costas e o ritmo das pedaladas criam uma sensação de liberdade e euforia.
+    É como se o mundo se abrisse diante de mim, e eu possa explorar todos os cantos e recantos.
+</p>
+
+<p>
+    A paixão por pedalar não é apenas sobre o exercício físico ou a competitividade, é sobre a jornada, a descoberta e a conexão com o mundo ao meu redor.
+    É sobre sentir o coração bater forte, a adrenalina correr nas veias e a alma se encher de alegria.
+</p>
+
+<p>
+    Quando estou na bike, tudo parece mais claro, mais simples e mais belo. É como se o mundo se revelasse em toda a sua glória, e eu me sentisse parte integrante dele.
+    É uma sensação indescritível, mas que me faz querer pedalar para sempre.
+</p>
+
+<script>
+    function changeFontSize(change) {
+        let body = document.body;
+        let currentSize = parseFloat(window.getComputedStyle(body, null).getPropertyValue('font-size'));
+        body.style.fontSize = (currentSize + change) + 'px';
+    }
+</script>
+</body>
+</html>
+</html>
